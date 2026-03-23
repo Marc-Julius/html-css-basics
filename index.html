@@ -1,10 +1,148 @@
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="main">
+        <button class="option"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu-icon lucide-menu">
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h16" />
+            </svg>
+        </button>
+        <div class="search-container">
+
+            <div class="search-bar">
+                <input type="text" placeholder="Type to search" class="search-input" id="search-input">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </div>
+            <div class="leftdiv">
+                <div class="hpa">
+                    <select class="opt" name="car-list">help
+                        <option value="option">New issue</option>
+                        <option value="toyota">New repository</option>
+                        <option value="honda" selected>Import repository</option>
+                        <option value="ford">New Codespace</option>
+                    </select>
+                    <button class="opt"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-dot-icon lucide-circle-dot">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="1" />
+                        </svg></button>
+                    <button class="opt"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-git-pull-request-arrow-icon lucide-git-pull-request-arrow">
+                            <circle cx="5" cy="6" r="3" />
+                            <path d="M5 9v12" />
+                            <circle cx="19" cy="18" r="3" />
+                            <path d="m15 9-3-3 3-3" />
+                            <path d="M12 6h5a2 2 0 0 1 2 2v7" />
+                        </svg></button>
+                    <button class="opt"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-calendar-x2-icon lucide-calendar-x-2">
+                            <path d="M8 2v4" />
+                            <path d="M16 2v4" />
+                            <path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8" />
+                            <path d="M3 10h18" />
+                            <path d="m17 22 5-5" />
+                            <path d="m17 17 5 5" />
+                        </svg></button>
+                </div>
+                <button class="opt"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-book-marked-icon lucide-book-marked">
+                        <path d="M10 2v8l3-3 3 3V2" />
+                        <path
+                            d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                    </svg></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="display">
+        <div class="or"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-chevrons-left-right-icon lucide-chevrons-left-right">
+                    <path d="m9 7-5 5 5 5" />
+                    <path d="m15 7 5 5-5 5" />
+                </svg>Code</button></div>
+        <div class="or"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-circle-dot-icon lucide-circle-dot">
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="12" cy="12" r="1" />
+                </svg>Issues</button></div>
+        <div class="or"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-git-pull-request-arrow-icon lucide-git-pull-request-arrow">
+                    <circle cx="5" cy="6" r="3" />
+                    <path d="M5 9v12" />
+                    <circle cx="19" cy="18" r="3" />
+                    <path d="m15 9-3-3 3-3" />
+                    <path d="M12 6h5a2 2 0 0 1 2 2v7" />
+                </svg>Pull requests</button></div>
+        <div class="or"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-circle-play-icon lucide-circle-play">
+                    <path
+                        d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z" />
+                    <circle cx="12" cy="12" r="10" />
+                </svg>Actions</button></div>
+        <div class="or"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-grid2x2-icon lucide-grid-2x2">
+                    <path d="M12 3v18" />
+                    <path d="M3 12h18" />
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                </svg>Projects</button></div>
+        <div class="or"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-book-open-icon lucide-book-open">
+                    <path d="M12 7v14" />
+                    <path
+                        d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+                </svg>Wiki</button></div>
+        <div class="or"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-shield-alert-icon lucide-shield-alert">
+                    <path
+                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                    <path d="M12 8v4" />
+                    <path d="M12 16h.01" />
+                </svg>Security</button></div>
+        <div class="or"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-chart-line-icon lucide-chart-line">
+                    <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+                    <path d="m19 9-5 5-4-4-3 3" />
+                </svg>Insights</button></div>
+        <div class="or"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings">
+                    <path
+                        d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+                    <circle cx="12" cy="12" r="3" />
+                </svg>Settings</button></div>
+    </div>
+    <hr>
+
 </body>
+
 </html>
